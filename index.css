@@ -1,0 +1,305 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image1
+{
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Image2
+{
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Heading7
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+   padding: 10px 0 10px 0;
+   text-align: center;
+}
+#Heading7
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 43px;
+   margin: 0;
+   text-align: center;
+}
+#wb_FontAwesomeIcon9
+{
+   background-color: #2E2E2E;
+   background-image: none;
+   border: 2px solid #D0D6D7;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0 10px 0 0 ;
+   padding: 8px 8px 8px 8px;
+   vertical-align: top;
+}
+#wb_FontAwesomeIcon9 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#wb_FontAwesomeIcon9:hover
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 2px solid #2E2E2E;
+}
+#FontAwesomeIcon9
+{
+   height: 136px;
+   width: 147px;
+}
+#FontAwesomeIcon9 i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 136px;
+   line-height: 136px;
+   vertical-align: middle;
+   width: 135px;
+}
+#wb_FontAwesomeIcon9:hover #FontAwesomeIcon9 i
+{
+   color: #2E2E2E;
+}
+#wb_FontAwesomeIcon9
+{
+   transform: rotate(0deg) ;
+   transition: transform 500ms linear 0ms;
+}
+#wb_FontAwesomeIcon9:hover
+{
+   transform: rotate(0deg) scale(1.4,1.4) ;
+   transition: transform 500ms linear 0ms;
+}
+#wb_FontAwesomeIcon6
+{
+   background-color: #2E2E2E;
+   background-image: none;
+   border: 2px solid #D0D6D7;
+   border-radius: 50%;
+   text-align: center;
+   margin: 0 10px 0 0 ;
+   padding: 8px 8px 8px 8px;
+   vertical-align: top;
+}
+#wb_FontAwesomeIcon6 a::after
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   pointer-events: auto;
+   content: "";
+}
+#wb_FontAwesomeIcon6:hover
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 2px solid #2E2E2E;
+}
+#FontAwesomeIcon6
+{
+   height: 134px;
+   width: 144px;
+}
+#FontAwesomeIcon6 i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 134px;
+   line-height: 134px;
+   vertical-align: middle;
+   width: 133px;
+}
+#wb_FontAwesomeIcon6:hover #FontAwesomeIcon6 i
+{
+   color: #2E2E2E;
+}
+#wb_FontAwesomeIcon6
+{
+   transform: rotate(0deg) ;
+   transition: transform 500ms linear 0ms;
+}
+#wb_FontAwesomeIcon6:hover
+{
+   transform: rotate(0deg) scale(1.4,1.4) ;
+   transition: transform 500ms linear 0ms;
+}
+#wb_Image1
+{
+   position: absolute;
+   left: 28px;
+   top: 3px;
+   width: 894px;
+   height: 1490px;
+   z-index: 0;
+}
+#wb_Image2
+{
+   position: absolute;
+   left: 5px;
+   top: 3px;
+   width: 940px;
+   height: 1566px;
+   z-index: 1;
+}
+#wb_Heading7
+{
+   position: absolute;
+   left: 165px;
+   top: 779px;
+   width: 641px;
+   height: 92px;
+   z-index: 2;
+}
+#wb_FontAwesomeIcon9
+{
+   position: absolute;
+   left: 495px;
+   top: 957px;
+   width: 147px;
+   height: 136px;
+   text-align: center;
+   z-index: 3;
+}
+#wb_FontAwesomeIcon6
+{
+   position: absolute;
+   left: 288px;
+   top: 958px;
+   width: 144px;
+   height: 134px;
+   text-align: center;
+   z-index: 4;
+}
+@media only screen and (max-width: 480px) and (orientation: portrait)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#wb_Image1
+{
+   left: 28px;
+   top: 3px;
+   width: 894px;
+   height: 1490px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image2
+{
+   left: 5px;
+   top: 3px;
+   width: 940px;
+   height: 1566px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Heading7
+{
+   left: 165px;
+   top: 779px;
+   width: 641px;
+   height: 92px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 10px 0 10px 0;
+}
+#wb_FontAwesomeIcon9
+{
+   left: 387px;
+   top: 989px;
+   width: 147px;
+   height: 136px;
+   visibility: visible;
+   display: inline;
+   margin: 0 10px 0 0 ;
+   padding: 8px 8px 8px 8px;
+}
+#FontAwesomeIcon9
+{
+   width: 147px;
+   height: 136px;
+}
+#FontAwesomeIcon9 i
+{
+   line-height: 136px;
+   font-size: 136px;
+   width: 135px;
+}
+#wb_FontAwesomeIcon6
+{
+   left: 150px;
+   top: 990px;
+   width: 144px;
+   height: 134px;
+   visibility: visible;
+   display: inline;
+   margin: 0 10px 0 0 ;
+   padding: 8px 8px 8px 8px;
+}
+#FontAwesomeIcon6
+{
+   width: 144px;
+   height: 134px;
+}
+#FontAwesomeIcon6 i
+{
+   line-height: 134px;
+   font-size: 134px;
+   width: 133px;
+}
+}
