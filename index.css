@@ -53,28 +53,26 @@ html, body {
     z-index: 1;  /* L'icône sera en dessous de l'icône #wb_FontAwesomeIcon9 */
 }
 
-
 #wb_FontAwesomeIcon6 i, #wb_FontAwesomeIcon9 i {
     color: #fff;
     font-size: 48px;  /* Taille de l'icône */
 }
 
-
-}
-
 /* Responsive pour les petits écrans */
 @media only screen and (max-width: 940px) and (orientation: portrait) {
-    /* Ajustement de la taille des icônes pour les petits écrans */
+    /* Positionner les icônes vers le bas */
     #wb_FontAwesomeIcon6 {
-        top: 150px;  /* Plus bas pour plus d'espace */
-        left: 10px;
+        top: auto;  /* Supprime la position top précédente */
+        bottom: 30px;  /* Place l'icône à 30px du bas */
+        left: 20px;  /* Décalage depuis la gauche */
         width: 100px;
         height: 100px;
     }
 
     #wb_FontAwesomeIcon9 {
-        top: 150px;
-        right: 10px;
+        top: auto;  /* Supprime la position top précédente */
+        bottom: 30px;  /* Place l'icône à 30px du bas */
+        right: 20px;  /* Décalage depuis la droite */
         width: 100px;
         height: 100px;
     }
