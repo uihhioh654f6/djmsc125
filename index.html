@@ -3,20 +3,77 @@
 <head>
 <meta charset="utf-8">
 <title>djamisca</title>
-<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="font-awesome.min.css" rel="stylesheet">
-<link href="site_djamisca.css" rel="stylesheet">
-<link href="index.css" rel="stylesheet">
+<style>
+   /* Styles de base pour le document */
+   html, body {
+       margin: 0;
+       padding: 0;
+       width: 100%;
+       height: 100%;
+       overflow: hidden; /* Évite les barres de défilement */
+   }
+
+   /* Style pour le conteneur de l'image de fond */
+   #wb_Image1 {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100vw; /* Largeur de la fenêtre */
+       height: 100vh; /* Hauteur de la fenêtre */
+       z-index: -1; /* Place derrière tous les autres éléments */
+       overflow: hidden;
+   }
+
+   /* Style de l'image de fond */
+   #Image1 {
+       width: 100%;
+       height: 100%;
+       object-fit: cover; /* L'image remplit tout en conservant les proportions */
+   }
+
+   /* Styles pour les icônes */
+   #wb_FontAwesomeIcon6, #wb_FontAwesomeIcon9 {
+       position: absolute;
+       border-radius: 50%;
+       background-color: #2E2E2E;
+       padding: 10px;
+       text-align: center;
+       border: 2px solid #D0D6D7;
+   }
+
+   #wb_FontAwesomeIcon6 {
+       top: 20px;
+       left: 20px;
+   }
+
+   #wb_FontAwesomeIcon9 {
+       top: 20px;
+       right: 20px;
+   }
+
+   #wb_FontAwesomeIcon6 i, #wb_FontAwesomeIcon9 i {
+       color: #fff;
+       font-size: 48px;
+   }
+</style>
 </head>
 <body>
 <div id="wb_Image1">
-<img src="images/BACKGNR.jpg" id="Image1" alt="" width="396" height="704"></div>
+   <img src="BACKGNR.jpg" id="Image1" alt="Image de fond">
+</div>
+
 <div id="wb_FontAwesomeIcon6">
-<a href="https://www.instagram.com/HendaCamara/"><div id="FontAwesomeIcon6"><i class="fa fa-instagram"></i></div></a></div>
+   <a href="https://www.instagram.com/HendaCamara/">
+      <i class="fa fa-instagram"></i>
+   </a>
+</div>
+
 <div id="wb_FontAwesomeIcon9">
-<a href="https://www.tiktok.com/@h.sko010"><div id="FontAwesomeIcon9"><i class="fa fa-tiktok"></i></div></a></div>
-<div id="wb_Image3">
-<img src="" id="Image3" alt=""></div>
+   <a href="https://www.tiktok.com/@h.sko010">
+      <i class="fa fa-tiktok"></i>
+   </a>
+</div>
 </body>
 </html>
