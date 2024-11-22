@@ -1,84 +1,99 @@
-/* Appliquer un style de base */
-html, body {
-    margin: 0;
-    padding: 0;
+html, body, #container {
     width: 100%;
     height: 100%;
 }
 
-/* Image de fond qui prend toute la largeur et hauteur */
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.1875;
+    margin: 0;
+    padding: 0;
+}
+
 #wb_Image1 {
-    position: fixed;  /* Fixe l'image en arrière-plan */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;  /* L'image est derrière tous les autres éléments */
+    vertical-align: top;
 }
 
 #Image1 {
+    border: 0px solid #000000;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* L'image s'ajuste sans déformation */
 }
 
-/* Styles des icônes */
 #wb_FontAwesomeIcon6, #wb_FontAwesomeIcon9 {
-    position: absolute;  /* Position absolue pour superposer les icônes */
     background-color: #2E2E2E;
-    border-radius: 50%;
-    padding: 10px;
-    text-align: center;
+    background-image: none;
     border: 2px solid #D0D6D7;
-    z-index: 1;  /* Pour que les icônes soient visibles au-dessus de l'image */
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px 0 0;
+    padding: 8px;
+    vertical-align: top;
+    position: absolute;  /* Important to keep icons positioned correctly */
 }
 
-#wb_FontAwesomeIcon9 {
-    position: absolute;  /* Position absolue pour permettre de positionner précisément */
-    left: 221px;  /* Positionner l'icône depuis la gauche de la page */
-    top: 317px;   /* Positionner l'icône depuis le haut de la page */
+#FontAwesomeIcon6, #FontAwesomeIcon9 {
     width: 134px;
     height: 120px;
     text-align: center;
-    z-index: 2;  /* S'assurer que l'icône est au-dessus des autres éléments */
 }
 
-#wb_FontAwesomeIcon6 {
-    position: absolute;  /* Position absolue pour permettre de positionner précisément */
-    left: 11px;  /* Positionner l'icône depuis la gauche de la page */
-    top: 317px;  /* Positionner l'icône depuis le haut de la page */
-    width: 134px;
-    height: 120px;
-    text-align: center;
-    z-index: 1;  /* L'icône sera en dessous de l'icône #wb_FontAwesomeIcon9 */
+#FontAwesomeIcon6 i, #FontAwesomeIcon9 i {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 120px;
+    line-height: 120px;
+    vertical-align: middle;
+    width: 119px;
 }
 
-#wb_FontAwesomeIcon6 i, #wb_FontAwesomeIcon9 i {
-    color: #fff;
-    font-size: 48px;  /* Taille de l'icône */
+#wb_FontAwesomeIcon6:hover, #wb_FontAwesomeIcon9:hover {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 2px solid #2E2E2E;
 }
 
-/* Responsive pour les petits écrans */
 @media only screen and (max-width: 940px) and (orientation: portrait) {
-    /* Positionner les icônes vers le bas */
+    /* Positionnement absolu de l'image */
+    #wb_Image1 {
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: auto;  /* Pour une meilleure flexibilité mobile */
+    }
+
+    /* Positionnement des icônes pour la version mobile */
+    #wb_FontAwesomeIcon6, #wb_FontAwesomeIcon9 {
+        position: fixed; /* Fixer les icônes en bas de l'écran */
+        width: 100px;   /* Ajuster la taille des icônes pour les petits écrans */
+        height: 100px;
+        z-index: 10;  /* Assurez-vous que les icônes soient au-dessus de l'image */
+    }
+
+    /* Icône à gauche */
     #wb_FontAwesomeIcon6 {
-        top: auto;  /* Supprime la position top précédente */
-        bottom: 30px;  /* Place l'icône à 30px du bas */
-        left: 20px;  /* Décalage depuis la gauche */
-        width: 100px;
-        height: 100px;
+        left: 10px;  /* Légèrement à gauche */
+        bottom: 50px; /* Un peu au-dessus du bas de l'écran */
     }
 
+    /* Icône à droite */
     #wb_FontAwesomeIcon9 {
-        top: auto;  /* Supprime la position top précédente */
-        bottom: 30px;  /* Place l'icône à 30px du bas */
-        right: 20px;  /* Décalage depuis la droite */
-        width: 100px;
-        height: 100px;
+        right: 10px; /* Légèrement à droite */
+        bottom: 50px; /* Un peu au-dessus du bas de l'écran */
     }
 
+    /* Ajustement de la taille de l'icône */
     #FontAwesomeIcon6 i, #FontAwesomeIcon9 i {
-        font-size: 50px;  /* Taille d'icône plus petite */
+        font-size: 50px; /* Taille réduite pour les icônes sur mobile */
         line-height: 100px;
     }
 }
