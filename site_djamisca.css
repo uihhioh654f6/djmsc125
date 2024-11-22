@@ -1,92 +1,94 @@
-h1, .h1
-{
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 32px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
-   margin: 0 0 0 0;
-   padding: 0 0 0 0;
-   display: inline-block;
+/* Style commun pour tous les titres */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'Arial', sans-serif;  /* Police générique */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+    color: #333333;  /* Utilisation d'une couleur plus foncée pour un meilleur contraste */
 }
-h2, .h2
-{
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 27px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
-   margin: 0 0 0 0;
-   padding: 0 0 0 0;
-   display: inline-block;
+
+/* Style spécifique pour chaque niveau de titre */
+h1, .h1 {
+    font-size: 3.2rem;  /* Taille flexible */
+    color: #2E74B5;  /* Couleur primaire */
 }
-h3, .h3
-{
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 24px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
-   margin: 0 0 0 0;
-   padding: 0 0 0 0;
-   display: inline-block;
+
+h2, .h2 {
+    font-size: 2.7rem;
+    color: #2E74B5;
 }
-h4, .h4
-{
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 21px;
-   font-style: italic;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
-   margin: 0 0 0 0;
-   padding: 0 0 0 0;
-   display: inline-block;
+
+h3, .h3 {
+    font-size: 2.4rem;
+    color: #4F81BD;  /* Couleur secondaire */
 }
-h5, .h5
-{
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 19px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
-   margin: 0 0 0 0;
-   padding: 0 0 0 0;
-   display: inline-block;
+
+h4, .h4 {
+    font-size: 2.1rem;
+    font-style: italic;
+    color: #4F81BD;
 }
-h6, .h6
-{
-   font-family: Arial;
-   font-weight: bold;
-   font-size: 16px;
-   text-decoration: none;
-   color: #000000;
-   --color: #000000;
-   background-color: transparent;
-   margin: 0 0 0 0;
-   padding: 0 0 0 0;
-   display: inline-block;
+
+h5, .h5 {
+    font-size: 1.9rem;
+    color: #5B9BD5;  /* Couleur plus douce pour les titres secondaires */
 }
-.CustomStyle
-{
-   font-family: "Courier New";
-   font-weight: bold;
-   font-size: 16px;
-   text-decoration: none;
-   color: #2E74B5;
-   --color: #2E74B5;
-   background-color: transparent;
+
+h6, .h6 {
+    font-size: 1.6rem;
+    color: #5B9BD5;
 }
-@media only screen and (max-width: 940px) and (orientation: portrait)
-{
+
+/* Style de la classe personnalisée */
+.CustomStyle {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #2E74B5;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Effet de survol pour les titres */
+h1:hover, .h1:hover,
+h2:hover, .h2:hover,
+h3:hover, .h3:hover,
+h4:hover, .h4:hover,
+h5:hover, .h5:hover,
+h6:hover, .h6:hover {
+    color: #2A5785;  /* Couleur plus foncée au survol */
+    cursor: pointer;  /* Change le curseur pour indiquer l'interaction */
+}
+
+/* Responsive pour les petits écrans */
+@media only screen and (max-width: 940px) and (orientation: portrait) {
+    h1, .h1 {
+        font-size: 2.5rem;  /* Réduction de la taille des titres pour les petits écrans */
+    }
+
+    h2, .h2 {
+        font-size: 2.2rem;
+    }
+
+    h3, .h3 {
+        font-size: 2rem;
+    }
+
+    h4, .h4 {
+        font-size: 1.8rem;
+    }
+
+    h5, .h5 {
+        font-size: 1.7rem;
+    }
+
+    h6, .h6 {
+        font-size: 1.5rem;
+    }
+
+    .CustomStyle {
+        font-size: 1.4rem;
+    }
 }
