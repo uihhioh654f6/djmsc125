@@ -33,30 +33,33 @@ html, body {
     z-index: 1;  /* Pour que les icônes soient visibles au-dessus de l'image */
 }
 
-/* Positionner les icônes */
-#wb_FontAwesomeIcon6 {
-    top: 20px;  /* À partir du haut */
-    left: 20px;  /* À partir de la gauche */
+#wb_FontAwesomeIcon9 {
+    position: absolute;  /* Position absolue pour permettre de positionner précisément */
+    left: 221px;  /* Positionner l'icône depuis la gauche de la page */
+    top: 317px;   /* Positionner l'icône depuis le haut de la page */
+    width: 134px;
+    height: 120px;
+    text-align: center;
+    z-index: 2;  /* S'assurer que l'icône est au-dessus des autres éléments */
 }
 
-#wb_FontAwesomeIcon9 {
-    top: 20px;  /* À partir du haut */
-    right: 20px;  /* À partir de la droite */
+#wb_FontAwesomeIcon6 {
+    position: absolute;  /* Position absolue pour permettre de positionner précisément */
+    left: 11px;  /* Positionner l'icône depuis la gauche de la page */
+    top: 317px;  /* Positionner l'icône depuis le haut de la page */
+    width: 134px;
+    height: 120px;
+    text-align: center;
+    z-index: 1;  /* L'icône sera en dessous de l'icône #wb_FontAwesomeIcon9 */
 }
+
 
 #wb_FontAwesomeIcon6 i, #wb_FontAwesomeIcon9 i {
     color: #fff;
     font-size: 48px;  /* Taille de l'icône */
 }
 
-/* Quand l'utilisateur passe sa souris sur les icônes */
-#wb_FontAwesomeIcon6:hover, #wb_FontAwesomeIcon9:hover {
-    background-color: #fff;  /* Changer la couleur de fond */
-    border-color: #2E2E2E;  /* Changer la couleur de bordure */
-}
 
-#wb_FontAwesomeIcon6:hover i, #wb_FontAwesomeIcon9:hover i {
-    color: #2E2E2E;  /* Changer la couleur de l'icône au survol */
 }
 
 /* Responsive pour les petits écrans */
