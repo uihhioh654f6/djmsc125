@@ -1,22 +1,97 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>djamisca</title>
-<meta name="generator" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="font-awesome.min.css" rel="stylesheet">
-<link href="site_djamisca.css" rel="stylesheet">
-<link href="index.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>djamisca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="font-awesome.min.css" rel="stylesheet">
+    <style>
+        /* Pour que l'image de fond occupe toute la fenêtre */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Empêche le défilement */
+        }
+
+        #wb_Image1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; /* Largeur de la fenêtre */
+            height: 100vh; /* Hauteur de la fenêtre */
+            background-image: url('BACKGNR.jpg'); /* Image de fond */
+            background-size: cover; /* Adapte l'image pour qu'elle occupe tout l'écran */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Évite la répétition de l'image */
+            z-index: -1; /* Place l'image derrière tous les autres éléments */
+        }
+
+        /* Styles pour les icônes */
+        #wb_FontAwesomeIcon6, #wb_FontAwesomeIcon9 {
+            position: absolute;
+            border-radius: 50%;
+            background-color: #2E2E2E;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #D0D6D7;
+            z-index: 10; /* Assurez-vous que les icônes sont au-dessus de l'image */
+        }
+
+        #wb_FontAwesomeIcon6 {
+            top: 317px;
+            left: 11px;
+        }
+
+        #wb_FontAwesomeIcon9 {
+            top: 317px;
+            left: 300px;
+        }
+
+        #wb_FontAwesomeIcon6 i, #wb_FontAwesomeIcon9 i {
+            color: #fff;
+            font-size: 48px;
+        }
+
+        /* Responsive pour petits écrans */
+        @media only screen and (max-width: 940px) and (orientation: portrait) {
+            #wb_FontAwesomeIcon6, #wb_FontAwesomeIcon9 {
+                width: 70px;
+                height: 70px;
+                padding: 8px;
+            }
+
+            #wb_FontAwesomeIcon6 i, #wb_FontAwesomeIcon9 i {
+                font-size: 36px;
+                line-height: 70px;
+            }
+
+            #wb_FontAwesomeIcon6 {
+                top: 293px;
+                left: 18px;
+            }
+
+            #wb_FontAwesomeIcon9 {
+                top: 293px;
+                left: 280px;
+            }
+        }
+    </style>
 </head>
 <body>
-<div id="wb_Image1">
-<img src="BACKGNR.jpg" id="Image1" alt=""></div>
-<div id="wb_FontAwesomeIcon6">
-<a href="https://www.instagram.com/HendaCamara/"><div id="FontAwesomeIcon6"><i class="fa fa-instagram"></i></div></a></div>
-<div id="wb_FontAwesomeIcon9">
-<a href="https://www.tiktok.com/@h.sko010"><div id="FontAwesomeIcon9"><i class="fa fa-tiktok"></i></div></a></div>
-<div id="wb_Image3">
-<img src="" id="Image3" alt=""></div>
+    <div id="wb_Image1"></div>
+
+    <div id="wb_FontAwesomeIcon6">
+        <a href="https://www.instagram.com/HendaCamara/">
+            <div id="FontAwesomeIcon6"><i class="fa fa-instagram"></i></div>
+        </a>
+    </div>
+
+    <div id="wb_FontAwesomeIcon9">
+        <a href="https://www.tiktok.com/@h.sko010">
+            <div id="FontAwesomeIcon9"><i class="fa fa-tiktok"></i></div>
+        </a>
+    </div>
 </body>
 </html>
