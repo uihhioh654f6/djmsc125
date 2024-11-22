@@ -6,7 +6,7 @@ html, body, #container {
 body {
    background-color: #FFFFFF;
    color: #000000;
-   font-family: Arial;
+   font-family: Arial, sans-serif;
    font-weight: normal;
    font-size: 13px;
    line-height: 1.1875;
@@ -32,10 +32,11 @@ body {
 
 #wb_FontAwesomeIcon6 i, #wb_FontAwesomeIcon9 i {
    color: #FFFFFF;
-   font-size: 120px;
+   font-size: 120px;  /* Taille des icônes par défaut */
    line-height: 120px;
 }
 
+/* Réactivité pour les petits écrans */
 @media only screen and (max-width: 940px) and (orientation: portrait) {
    body {
       background-color: #FFFFFF;
@@ -49,16 +50,21 @@ body {
    /* Icône 6 (à gauche) sur mobile */
    #wb_FontAwesomeIcon6 {
       left: 11px;  /* Position horizontale à 11px */
-      top: 317px;  /* Position verticale à 317px */
-      width: 145px;
-      height: 128px;
+      top: 270px;  /* Position verticale ajustée pour être plus centrée */
+      width: 120px;  /* Réduction de la largeur */
+      height: 120px;  /* Réduction de la hauteur */
    }
 
    /* Icône 9 (à droite) sur mobile */
    #wb_FontAwesomeIcon9 {
-      left: 221px;  /* Position horizontale à 221px */
-      top: 317px;   /* Position verticale à 317px */
-      width: 145px;
-      height: 128px;
+      left: 150px;  /* Position horizontale ajustée */
+      top: 270px;   /* Position verticale ajustée pour être plus centrée */
+      width: 120px;  /* Réduction de la largeur */
+      height: 120px;  /* Réduction de la hauteur */
    }
 }
+
+/* Réactivité pour très petits écrans (ex: smartphones) */
+@media only screen and (max-width: 480px) {
+   /* Ajuster la taille des icônes pour les petits écrans */
+   #wb_Font
