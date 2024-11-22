@@ -246,3 +246,14 @@ body
    padding: 0;
 }
 }
+
+@media only screen and (max-width: 768px) {
+   #FontAwesomeIcon6, #FontAwesomeIcon9 {
+       font-size: 80px; /* Réduit la taille des icônes */
+   }
+
+   #wb_FontAwesomeIcon6, #wb_FontAwesomeIcon9 {
+       padding: 5px; /* Réduit l'espace autour des icônes */
+   }
+}
+
